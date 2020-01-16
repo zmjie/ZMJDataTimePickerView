@@ -1,0 +1,15 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'ZMJDataTimePickerView_Example' do
+  pod 'ZMJDataTimePickerView', :path => '../'
+  
+  pod 'Masonry', '~> 1.1.0'
+  
+  target 'ZMJDataTimePickerView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

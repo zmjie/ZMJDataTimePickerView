@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wQg-tq-qST">
+            <objects>
+                <viewController id="whP-gf-Uak" customClass="ZMJViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5MB-ow-fRU">
+                                <rect key="frame" x="116.5" y="158.5" width="142" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wq6-hn-JkU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="选择日期-Sheet"/>
+                                <connections>
+                                    <action selector="zmj_btnAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="Mba-5I-Gmu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0y1-gX-Bxs">
+                                <rect key="frame" x="121.5" y="208.5" width="132" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="UkY-zX-1qv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="选择日期-Alert"/>
+                                <connections>
+                                    <action selector="zmj_btnAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="VlG-VX-0W3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJm-fr-cFW">
+                                <rect key="frame" x="187.5" y="278.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNT-KX-Ew6">
+                                <rect key="frame" x="116.5" y="408.5" width="142" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xNx-RP-bGz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="选择时间-Sheet"/>
+                                <connections>
+                                    <action selector="zmj_btnAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="bWQ-WH-Jn5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FtV-0t-rFy">
+                                <rect key="frame" x="121.5" y="458.5" width="132" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Knd-ZB-Ysv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="选择时间-Alert"/>
+                                <connections>
+                                    <action selector="zmj_btnAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="bVx-w8-FB0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efy-KF-RKk">
+                                <rect key="frame" x="187.5" y="528.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zJm-fr-cFW" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="1my-oz-jhr"/>
+                            <constraint firstItem="5MB-ow-fRU" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="4ce-rk-8QA"/>
+                            <constraint firstItem="FtV-0t-rFy" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="8O0-sG-tSy"/>
+                            <constraint firstItem="0y1-gX-Bxs" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="BbB-xg-thB"/>
+                            <constraint firstItem="Efy-KF-RKk" firstAttribute="top" secondItem="FtV-0t-rFy" secondAttribute="bottom" constant="20" id="Dn5-W2-qY9"/>
+                            <constraint firstItem="HNT-KX-Ew6" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="ErN-aE-URj"/>
+                            <constraint firstItem="0y1-gX-Bxs" firstAttribute="top" secondItem="5MB-ow-fRU" secondAttribute="bottom" id="KIA-xm-Vvc"/>
+                            <constraint firstItem="FtV-0t-rFy" firstAttribute="top" secondItem="HNT-KX-Ew6" secondAttribute="bottom" id="M7M-g5-dVx"/>
+                            <constraint firstItem="HNT-KX-Ew6" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" constant="100" id="Zgj-kb-7jR"/>
+                            <constraint firstItem="Efy-KF-RKk" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="gCp-kl-sr3"/>
+                            <constraint firstItem="5MB-ow-fRU" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" constant="-150" id="s6l-eZ-hjm"/>
+                            <constraint firstItem="zJm-fr-cFW" firstAttribute="top" secondItem="0y1-gX-Bxs" secondAttribute="bottom" constant="20" id="ytG-sc-UkT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="zmj_tapBtn1" destination="5MB-ow-fRU" id="joY-Bu-vZE"/>
+                        <outlet property="zmj_tapBtn2" destination="0y1-gX-Bxs" id="7Xy-d1-hiq"/>
+                        <outlet property="zmj_tapBtn3" destination="HNT-KX-Ew6" id="HIX-lM-Wbz"/>
+                        <outlet property="zmj_tapBtn4" destination="FtV-0t-rFy" id="YzR-Rm-YZD"/>
+                        <outlet property="zmj_titleLabel1" destination="zJm-fr-cFW" id="PY4-hb-vPS"/>
+                        <outlet property="zmj_titleLabel2" destination="Efy-KF-RKk" id="Qqt-hj-gFd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.80000000000001" y="432.23388305847078"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,24 @@
+PODS:
+  - Masonry (1.1.0)
+  - ZMJDataTimePickerView (0.0.1):
+    - Masonry (~> 1.1.0)
+
+DEPENDENCIES:
+  - Masonry (~> 1.1.0)
+  - ZMJDataTimePickerView (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+
+EXTERNAL SOURCES:
+  ZMJDataTimePickerView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ZMJDataTimePickerView: 0be393808ed564519c0b26dad05393193811a887
+
+PODFILE CHECKSUM: 35b69a03165cad45bc8d43b1807b37bb3940ff3c
+
+COCOAPODS: 1.8.4
