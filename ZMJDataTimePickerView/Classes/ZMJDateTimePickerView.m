@@ -263,7 +263,7 @@ typedef NS_ENUM(NSUInteger, ZMJDateTimePickerViewType) {
             
         case ZMJDateTimePickerView_yyMMdd: {
             
-            dispatch_async(dispatch_get_global_queue(0,0), ^{
+            dispatch_async(dispatch_get_global_queue(0, 0), ^{
                 
                 [self.zmj_dataSourceArr1 addObjectsFromArray:[ZMJDataTimeTool zmj_getDateAllDataSource]];
                 
@@ -336,7 +336,7 @@ typedef NS_ENUM(NSUInteger, ZMJDateTimePickerViewType) {
             
         case ZMJDateTimePickerView_HHmmss: {
             
-            dispatch_async(dispatch_get_global_queue(0,0), ^{
+            dispatch_async(dispatch_get_global_queue(0, 0), ^{
                 
                 [self.zmj_dataSourceArr1 addObjectsFromArray:[ZMJDataTimeTool zmj_getTimeAllDataSource]];
                 
